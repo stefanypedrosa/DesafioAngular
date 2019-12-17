@@ -1,0 +1,10 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+#titulo{
+    background-color: rgb(192, 134, 134);
+    color: #551717;
+    font-family: 'Permanent Marker', cursive;
+    padding: 3%;
+}

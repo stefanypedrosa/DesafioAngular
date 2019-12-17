@@ -1,0 +1,33 @@
+<section id="user">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="display-4 mt-3 text-center"><strong>USUÁRIOS</strong></h1>
+            <hr class="my-4">
+        </div>
+    </div>
+    <div *ngFor='let _user of users' id="margem">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h3 class='mt-3 text-left'>INFORMAÇÕES PESSOAIS</h3>
+                <p class="text-left"><strong>CÓDIGO:</strong> {{_user.id}}</p>
+                <p class="text-left"><strong>NOME:</strong> {{_user.name}}</p>
+                <p class="text-left"><strong>USERNAME:</strong> {{_user.username}}</p>
+                <p class="text-left"><strong>EMAIL:</strong> {{_user.email}}</p>
+                <p class="text-left"><strong>TELEFONE:</strong> {{_user.phone}}</p>
+                <p class="text-left"><strong>WEBSITE:</strong> {{_user.website}}</p>
+                <h3 class='mt-3'>ENDEREÇO</h3>
+                <p class="text-left"><strong>ENDEREÇO:</strong> {{_user.address.street}}</p>
+                <p class="text-left"><strong>COMPLEMENTO:</strong> {{_user.address.suite}}</p>
+                <p class="text-left"><strong>CIDADE:</strong> {{_user.address.city}}</p>
+                <p class="text-left"><strong>CEP:</strong> {{_user.address.zipcode}}</p>
+                <h3 class='mt-3'>EMPRESA</h3>
+                <p class="text-left"><strong>EMPRESA:</strong> {{_user.company.name}}</p>
+                <p class="text-left"><strong>SLOGAN:</strong> {{_user.company.catchPhrase}}</p>
+                <p class="text-left"><strong>RAMO:</strong> {{_user.company.bs}}</p>
+                <hr />
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</section>
