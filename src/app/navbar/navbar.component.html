@@ -1,16 +1,26 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#"><img src="../../assets/image/logo.png" alt="" width="60" height="60"></a>
-    
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+  <a class="navbar-brand" href="#"><img src="../../assets/image/logo.png" alt="" width="60" height="60"></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+    aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
     <span class="navbar-toggler-icon"></span>
-    </button>
+  </button>
   <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
     <ul class="navbar-nav" id="itens">
       <li class="nav-item active">
         <a class="nav-link" [routerLink]="'/home'"><strong>Home</strong><span class="sr-only">(página atual)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="'/consultas'"><strong>Consultas</strong></a>
+        <a class="nav-link" [routerLink]="'/consultas'"><strong>ConsultaTudo</strong></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="'/user-id'"><strong>ConsultaID</strong></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="'/tarefas'"><strong>TodasTarefas</strong></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="'/tarefa-id'"><strong>TarefaID</strong></a>
       </li>
     </ul>
   </div>

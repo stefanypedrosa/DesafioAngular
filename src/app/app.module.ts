@@ -1,6 +1,7 @@
+//importações do framework do Angular
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+//importações especificas da minha aplicação
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TituloComponent } from './titulo/titulo.component';
@@ -9,7 +10,10 @@ import { HomeComponent } from './home/home.component';
 import { ConsultasComponent } from './consultas/consultas.component';
 import { RodapeComponent } from './rodape/rodape.component';
 import { HttpClientModule } from '@angular/common/http';
-//import { UserIdComponent } from './user-id/user-id.component';
+import { FormsModule } from '@angular/forms'
+import { UserIdComponent } from './user-id/user-id.component';
+import { TarefasComponent } from './tarefas/tarefas.component';
+import { TarefaIdComponent } from './tarefa-id/tarefa-id.component';
 
 @NgModule({
   declarations: [
@@ -19,12 +23,15 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     ConsultasComponent,
     RodapeComponent,
-    //UserIdComponent
+    UserIdComponent,
+    TarefasComponent,
+    TarefaIdComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

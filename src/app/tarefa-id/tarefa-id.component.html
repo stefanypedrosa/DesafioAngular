@@ -1,0 +1,25 @@
+<section id="user">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="display-4 mt-3 text-center"><strong>TAREFAS</strong></h1>
+            <hr class="my-4">
+        </div>
+    </div>
+    <div id="entrada">
+        <input type="number" class="btn" id="usuario" placeholder="Digite o codigo da tarefa" [(ngModel)]="idB">
+        <button value="button" class="btn btn-outline botao" (click)="searchClick()">Buscar Tarefa</button>
+        <br>
+        <span *ngIf='_msgErro'>{{_msgErro}}</span>
+    </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8" id="margin">
+                <h3 class='mt-3 text-left'>INFORMAÇÕES TAREFAS</h3>
+                <p class="text-left"><strong>CÓDIGO TAREFA:</strong> {{_tarefa.id}}</p>
+                <p class="text-left"><strong>TITULO:</strong> {{_tarefa.title}}</p>
+                <p class="text-left"><strong>CÓDIGO RESPONSÁVEL:</strong> {{_tarefa.userId}}</p>
+                <p class="text-left"><strong>COMPLETA?</strong> {{_tarefa.completed}}</p>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+</section>

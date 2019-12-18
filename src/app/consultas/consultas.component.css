@@ -2,17 +2,12 @@ h1{
     color: #551717;
 }
 
-h3{
+h3, h5{
     color: #551717; 
     font-family: fantasy;
 }
 
-h4{
-    color: #551717; 
-    font-family: fantasy;
-    margin-right: 70%;
-    text-align: center;
-}
+
 #user{
     background-color: rgb(236, 212, 212);
 }

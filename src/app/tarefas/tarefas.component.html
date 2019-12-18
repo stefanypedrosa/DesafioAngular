@@ -1,0 +1,23 @@
+<section id="user">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="display-4 mt-3 text-center"><strong>TAREFAS</strong></h1>
+            <hr class="my-4">
+        </div>
+    </div>
+    <div *ngFor='let _tarefa of tasks' id="margem">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h3 class='mt-3 text-left'>INFORMAÇÕES TAREFAS</h3>
+                <p class="text-left"><strong>CÓDIGO TAREFA:</strong> {{_tarefa.id}}</p>
+                <p class="text-left"><strong>TITULO:</strong> {{_tarefa.title}}</p>
+                <p class="text-left"><strong>CÓDIGO RESPONSÁVEL:</strong> {{_tarefa.userId}}</p>
+                    <!--<p class="text-left"><strong>NOME:</strong> {{_user.name}}</p>-->
+                <p class="text-left"><strong>COMPLETA?</strong> {{_tarefa.completed}}</p>
+                <hr />
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</section>

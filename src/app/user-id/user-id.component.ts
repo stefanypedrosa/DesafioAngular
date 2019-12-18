@@ -8,15 +8,25 @@ import { UserService } from './../service/user.service';
   styleUrls: ['./user-id.component.css']
 })
 export class UserIdComponent implements OnInit {
-  id:number;
-  user:User = new User(0,"","","",null,"","",null)
+  private idBusca:number;
+  private _msgErro:string = null;
+
+  _user:User = null;
 
   constructor(private UserService:UserService) { }
 
   ngOnInit() {
   }
   searchClick(){
-    this.UserService.get(this.id).subscribe((UserOut: User)=>{this.user = UserOut;})
+    if(this.idBusca<1 || this.idBusca >10){
+      this._msgErro = "Dado inválido";
+      this.idBusca = null;
+    }
+    else{
+      this._msgErro = null;
+      this.UserService.get(this.idBusca).subscribe((UserOut: User)=>{this._user = UserOut;})
+      this.idBusca = null;
+    }
   }
 
 }

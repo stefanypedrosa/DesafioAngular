@@ -11,7 +11,7 @@ export class ConsultasComponent implements OnInit {
 
   constructor(private UserService: UserService) { }
 
-  users: User[];
+  public users: User[];
   ngOnInit() {
     this.findAll();
   }
